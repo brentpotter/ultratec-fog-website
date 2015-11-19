@@ -1,10 +1,5 @@
-var gulp = require('gulp'),
-connect = require('gulp-connect');
+var gulp = require('gulp');
 
-gulp.task('connect', function() {
-  connect.server({
-    port: 3000
-  });
+gulp.task('default', function() {
+  // place code for your default task here
 });
-
-gulp.task('default',['connect'] );
