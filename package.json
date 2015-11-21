@@ -5,7 +5,11 @@
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
-    "gulp": "^3.9.0"
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "gulp-nunjucks-render": "^1.0.0",
+    "gulp-prettify": "^0.3.0",
+    "gulp-sass": "^2.1.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
