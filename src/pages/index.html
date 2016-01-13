@@ -2,5 +2,67 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<h1>Hello world!</h1>
+
+<div id="masthead">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <img src="http://placehold.it/350x150" class="img-responsive">
+      </div>
+      <div class="col-md-8">
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eum voluptatibus minus qui veniam ipsam eaque cumque earum at, laudantium.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="product-categories">
+  <div class="container">
+    <div class="product-category">Fog & Haze</div>
+    <div class="product-category">Haze</div>
+    <div class="product-category">Effects</div>
+    <div class="product-category">Paper</div>
+    <div class="product-category">Fire & Safety</div>
+  </div>
+</div>
+
+<div id="news-events-section" class="container">
+  <div class="row">
+    <section id="recent-news" class="col-md-5">
+      <div class="news-snippet">
+        <a href=""><h3>Title of a news story</h3></a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quod, natus fuga consequatur minima aliquam dolores totam sunt voluptatem eveniet. Tenetur velit officia, hic, explicabo neque iste fugit inventore id!</p>
+        <a href="" class="pull-right">Full Story</a>
+      </div>
+      <div class="news-snippet">
+        <a href=""><h3>Title of a news story</h3></a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quod, natus fuga consequatur minima aliquam dolores totam sunt voluptatem eveniet. Tenetur velit officia, hic, explicabo neque iste fugit inventore id!</p>
+        <a href="" class="pull-right">Full Story</a>
+      </div>
+      <a href="" class="btn btn-primary">more stories</a>
+    </section>
+    <section id="important-dates" class="col-md-5 col-md-offset-1">
+      <p class="lead">Events & Important Dates</p>
+      <ul class="list-unstyled">
+        <li class="well">Ultratec will be closed on April 10, 2016</li>
+        <li class="well">Ultratec offices will be closed on February 2, 2016</li>
+      </ul>
+    </section>
+  </div>
+</div>
+
+<section id="cash-caps-advertisement">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4 col-md-2">
+        <img src="http://placehold.it/350x350" class="img-responsive">
+      </div>
+      <div class="col-md-6">
+        <p class="lead"><strong>Want cool swag? Save your fluid caps and cash them in for Ultratec branded clothing.</strong></p>
+        <a href="" class="btn btn-secondary">Cash in your caps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 {% endblock %}

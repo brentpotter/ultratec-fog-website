@@ -5820,3 +5820,95 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+
+.btn-secondary {
+  background: #F56E23;
+  color: white; }
+
+#main-header {
+  background: #0055A7; }
+
+#dealer-nav {
+  background: #00488e; }
+
+#masthead {
+  color: white;
+  background: url("../img/home-bg.jpg");
+  background-size: cover;
+  padding: 100px 0 150px 0; }
+
+#product-categories {
+  margin-top: -50px; }
+
+.product-category {
+  background: orange;
+  padding: 50px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  font-size: 120%;
+  width: 50%;
+  float: left; }
+  @media (min-width: 992px) {
+    .product-category {
+      padding: 100px 0;
+      width: 20%; } }
+  .product-category:nth-child(1) {
+    background: url("../img/category-fog-haze.jpg");
+    background-size: cover; }
+  .product-category:nth-child(2) {
+    background: url("../img/category-effects.jpg");
+    background-size: cover; }
+  .product-category:nth-child(3) {
+    background: url("../img/category-confetti.jpg");
+    background-size: cover; }
+  .product-category:nth-child(4) {
+    background: url("../img/category-fog-haze.jpg");
+    background-size: cover; }
+  .product-category:nth-child(5) {
+    background: url("../img/category-confetti.jpg");
+    background-size: cover; }
+
+#news-events-section {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  @media (max-width: 991px) {
+    #news-events-section .btn {
+      margin-bottom: 50px; } }
+  #news-events-section .news-snippet {
+    margin-bottom: 40px; }
+    #news-events-section .news-snippet h3 {
+      font-size: 18px; }
+    #news-events-section .news-snippet p {
+      line-height: 1.55em; }
+
+#important-dates .well {
+  margin-bottom: 5px;
+  color: #555555; }
+
+#cash-caps-advertisement {
+  background: url("../img/ultratec-swag.jpg");
+  background-size: cover;
+  padding: 100px 0 35px 0; }
+  #cash-caps-advertisement .lead {
+    color: white; }
+
+footer {
+  padding: 30px 0;
+  background: #0055A7; }
+  footer .row:first-child {
+    margin-bottom: 20px; }
+  @media (min-width: 768px) {
+    footer .phone-numbers, footer .social-icons {
+      text-align: right; } }
+  @media (min-width: 768px) {
+    footer .social-icons {
+      margin-top: -10px; } }
+  footer .divider-line {
+    border-top: 1px solid white; }
+
+footer {
+  color: white; }
+  footer a {
+    color: white; }

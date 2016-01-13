@@ -1,0 +1,126 @@
+@import "bootstrap.scss";
+
+.btn-secondary{
+  background: $brand-secondary;
+  color: white;
+}
+
+//Header//
+
+#main-header{
+  background: $brand-primary;
+}
+
+#dealer-nav{
+  background: darken($brand-primary, 5%);
+}
+
+//Homepage//
+
+#masthead{
+  color: white;
+  background: url('../img/home-bg.jpg');
+  background-size: cover;
+  padding: 100px 0 150px 0;
+}
+#product-categories{
+  margin-top: -50px;
+}
+.product-category{
+  background: orange;
+  padding: 50px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  font-size: 120%;
+  width: 50%;
+  float: left;
+  @media (min-width: $screen-md-min) {
+    padding: 100px 0;
+    width: 20%;
+  }
+  &:nth-child(1){
+    background: url('../img/category-fog-haze.jpg');
+    background-size: cover;
+  }
+  &:nth-child(2){
+    background: url('../img/category-effects.jpg');
+    background-size: cover;
+  }
+  &:nth-child(3){
+    background: url('../img/category-confetti.jpg');
+    background-size: cover;
+  }
+  &:nth-child(4){
+    background: url('../img/category-fog-haze.jpg');
+    background-size: cover;
+  }
+  &:nth-child(5){
+    background: url('../img/category-confetti.jpg');
+    background-size: cover;
+  }
+}
+
+#news-events-section{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  @media (max-width: $screen-sm-max) {
+    .btn{
+      margin-bottom: 50px;
+    }
+  }
+  .news-snippet{
+    margin-bottom: 40px;
+    h3{font-size: 18px;}
+    p{
+      line-height: 1.55em;
+    }
+  }
+}
+
+#important-dates{
+  .well{
+    margin-bottom: 5px;
+    color: $gray;
+  }
+}
+
+#cash-caps-advertisement{
+  background: url('../img/ultratec-swag.jpg');
+  background-size: cover;
+  padding: 100px 0 35px 0;
+  .lead{
+    color: white;
+  }
+}
+
+
+footer{
+  padding: 30px 0;
+  background: $brand-primary;
+  .row{
+    &:first-child{
+      margin-bottom: 20px;
+    }
+  }
+  .phone-numbers, .social-icons{
+    @media (min-width: $screen-sm-min){
+      text-align: right;
+    }
+  }
+  .social-icons{
+    @media (min-width: $screen-sm-min){
+      margin-top: -10px;
+    }
+  }
+  .divider-line{
+    border-top: 1px solid white;
+  }
+}
+footer{
+  color: white;
+  a{
+    color: white;
+  }
+}
