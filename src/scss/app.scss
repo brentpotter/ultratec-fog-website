@@ -1,8 +1,16 @@
 @import "bootstrap.scss";
+@import "mega-nav/MegaNavbar.scss";
+@import "mega-nav/inverse-skin.scss";
 
+.navbar{
+  margin-bottom: 0;
+}
 .btn-secondary{
   background: $brand-secondary;
   color: white;
+}
+.form-control{
+  height: 33px;
 }
 
 //Header//
@@ -33,7 +41,7 @@
   text-transform: uppercase;
   color: white;
   font-weight: 700;
-  font-size: 120%;
+  font-size: 160%;
   width: 50%;
   float: left;
   @media (min-width: $screen-md-min) {

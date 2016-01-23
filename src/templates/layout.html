@@ -16,5 +16,52 @@
     {% include "partials/footer.html" %}
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="/js/bootstrap.js"></script>
+    <script>// Prevent unexpected menu close
+        $(window).load(function(){ $(document).on('click', '.navbar .dropdown-menu', function(e){e.stopPropagation();})});
+
+        // Carousel
+        $('.carousel').carousel({interval: 1500});
+
+        // Tabs on hover
+        $(function() {
+            $('.dropdown, .dropdown-wide, .dropdown-full, .dropdown-short, .dropdown-grid')
+                .mouseenter(function(){if (!('ontouchstart' in window)) $(this).addClass('open');})
+                .mouseleave(function(){if (!('ontouchstart' in window)) $(this).removeClass('open');})
+                .click(function(e){if (!('ontouchstart' in window)) e.stopPropagation();});
+
+            $('[data-toggle=tab]').mouseenter(function(e){
+                  e.preventDefault();
+                  $(this).tab('show');
+                  $(this).closest('.dropdown-menu').css({right:0});
+            })
+            $('[data-toggle=tab]').click(function(e){e.preventDefault();})
+
+        });
+     </script>
+     <script id="script_remove">SetViewPort();</script>
+    <!-- <script>
+      $( document ).ready(function() {
+
+        var navHeight = $('#UNIQE_ID').offset().top;
+        FixMegaNavbar(navHeight);
+        $(window).bind('scroll', function() {FixMegaNavbar(navHeight);});
+
+        function FixMegaNavbar(navHeight) {
+          if (!$('#UNIQE_ID ').hasClass('navbar-fixed-bottom')) {
+            if ($(window).scrollTop() > navHeight) {
+              $('#UNIQE_ID ').addClass('navbar-fixed-top')
+              $('body').css({'margin-top': $('#UNIQE_ID ').height()+'px'});
+
+              if ($('#UNIQE_ID ').parent('div').hasClass('container')) $('#UNIQE_ID ').children('div').addClass('container').removeClass('container-fluid');
+              else if ($('#UNIQE_ID ').parent('div').hasClass('container-fluid')) $('#UNIQE_ID ').children('div').addClass('container-fluid').removeClass('container');
+            }
+            else {
+                $('#UNIQE_ID ').removeClass('navbar-fixed-top');
+                $('body').css({'margin-top': ''});
+            }
+          }
+        }
+      });
+    </script> -->
   </body>
 </html>
