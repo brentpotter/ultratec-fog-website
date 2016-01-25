@@ -11,10 +11,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> </head>
 
   <body>
-    <nav class="navbar navbar-inverse no-border-radius navbar-static-top" role="navigation">
+    <nav class="navbar navbar-dark-dark no-border-radius navbar-static-top menu-lg" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand_size_lg"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </button> <a class="navbar-brand" href="#">MegaNavbar</a> </div>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand_size_lg"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </button>
+          <a class="navbar-brand navbar-left" href="index.html"><img height="30" src="img/ultratec-logo-white.svg" alt='' /></a>
+        </div>
         <div class="collapse navbar-collapse" id="navbar-brand_size_lg">
           <ul class="nav navbar-nav navbar-left">
             <li class="dropdown-full"> <a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle">Products</a>
@@ -119,8 +121,8 @@
     <div id="masthead">
       <div class="container">
         <div class="row">
-          <div class="col-md-3"> <img src="http://placehold.it/350x150" class="img-responsive"> </div>
-          <div class="col-md-8">
+          <div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-0"> <img src="img/ultratec-logo-white.svg" class="img-responsive"> </div>
+          <div class="col-xs-10 col-xs-offset-1 col-md-7 col-md-offset-0">
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eum voluptatibus minus qui veniam ipsam eaque cumque earum at, laudantium.</p>
           </div>
         </div>
@@ -133,6 +135,20 @@
         <div class="product-category">Effects</div>
         <div class="product-category">Paper</div>
         <div class="product-category">Fire & Safety</div>
+      </div>
+    </div>
+    <div id="price-list-download" class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="well">
+            <div class="form-inline"> <a class="btn btn-primary">Download Price List (PDF)</a>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Your e-mail address"> <span class="input-group-btn">
+              <button class="btn btn-primary" type="button">E-mail Price List (CSV)</button>
+            </span> </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div id="news-events-section" class="container">
@@ -154,7 +170,7 @@
     <section id="cash-caps-advertisement">
       <div class="container">
         <div class="row">
-          <div class="col-xs-4 col-md-2"> <img src="http://placehold.it/350x350" class="img-responsive"> </div>
+          <div class="col-xs-4 col-md-2"> <img src="img/cash-cap.png" class="img-responsive"> </div>
           <div class="col-md-6">
             <p class="lead"><strong>Want cool swag? Save your fluid caps and cash them in for Ultratec branded clothing.</strong></p> <a href="" class="btn btn-secondary">Cash in your caps</a> </div>
         </div>
@@ -163,8 +179,8 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2"> <img src="http://placehold.it/350x150" class="img-responsive"> </div>
-          <div class="col-md-9 col-lg-10">
+          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2"> <img src="img/ultratec-logo-white.svg" class="img-responsive"> </div>
+          <div class="col-xs-12 col-md-9 col-lg-10">
             <ul class="phone-numbers list-unstyled">
               <li>Phone: 519-659-7972</li>
               <li>Toll Free: 800-388-0617</li>
@@ -174,7 +190,7 @@
         </div>
         <div class="row">
           <div class="col-sm-6 col-md-6">
-            <p><small>Copyright © 2015 Ultratec Special Effects <a href="http://www.ultratecfx.com">www.ultratecfx.com</a></small></p>
+            <p><small>Copyright © 2015 Ultratec Special Effects <a href="/">www.ultratecfx.com</a></small></p>
           </div>
           <div class="social-icons col-sm-6 col-md-6"> <a href=""><i class="fa fa-youtube-square fa-2x"></i></a> </div>
         </div>
@@ -227,30 +243,6 @@
     <script id="script_remove">
       SetViewPort();
     </script>
-    <!-- <script>
-      $( document ).ready(function() {
-
-        var navHeight = $('#UNIQE_ID').offset().top;
-        FixMegaNavbar(navHeight);
-        $(window).bind('scroll', function() {FixMegaNavbar(navHeight);});
-
-        function FixMegaNavbar(navHeight) {
-          if (!$('#UNIQE_ID ').hasClass('navbar-fixed-bottom')) {
-            if ($(window).scrollTop() > navHeight) {
-              $('#UNIQE_ID ').addClass('navbar-fixed-top')
-              $('body').css({'margin-top': $('#UNIQE_ID ').height()+'px'});
-
-              if ($('#UNIQE_ID ').parent('div').hasClass('container')) $('#UNIQE_ID ').children('div').addClass('container').removeClass('container-fluid');
-              else if ($('#UNIQE_ID ').parent('div').hasClass('container-fluid')) $('#UNIQE_ID ').children('div').addClass('container-fluid').removeClass('container');
-            }
-            else {
-                $('#UNIQE_ID ').removeClass('navbar-fixed-top');
-                $('body').css({'margin-top': ''});
-            }
-          }
-        }
-      });
-    </script> -->
   </body>
 
 </html>
