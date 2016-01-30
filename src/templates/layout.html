@@ -7,6 +7,7 @@
     <title></title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,400italic,700italic,300italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   </head>
   <body>
@@ -16,8 +17,10 @@
     {% include "partials/footer.html" %}
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="/js/bootstrap.js"></script>
+    <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="/js/bootstrap-image-gallery.js"></script>
     <script>// Prevent unexpected menu close
-        $(window).load(function(){ $(document).on('click', '.navbar .dropdown-menu', function(e){e.stopPropagation();})});
+      $(window).load(function(){ $(document).on('click', '.navbar .dropdown-menu', function(e){e.stopPropagation();})});
 
         // Carousel
         $('.carousel').carousel({interval: 1500});
@@ -39,5 +42,11 @@
         });
      </script>
      <script id="script_remove">SetViewPort();</script>
+    <script>
+    $('#product-tabs a').click(function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    })
+    </script>
   </body>
 </html>

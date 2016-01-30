@@ -1,0 +1,94 @@
+<!-- index.nunjucks -->
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container">
+  <div id="product-description" class="row">
+    <div class="col-sm-4 col-md-3">
+      <img src="http://placehold.it/350x150" alt="" class="img-responsive">
+    </div>
+    <div class="col-sm-8 col-md-9">
+      <h1>Premier Fog Effects Generator</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, unde blanditiis nesciunt at porro eius excepturi, aperiam et! Praesentium alias ab porro, molestias ex inventore sint numquam, iste, facere nostrum enim illo, reprehenderit dignissimos nihil fugiat. Sapiente facere fuga laudantium velit quia repellendus quas vitae eligendi quasi voluptas sed est unde quos quis ullam, earum magni. Nam ratione perferendis neque et omnis placeat accusamus quae assumenda magni consectetur! Repudiandae cupiditate, soluta a dicta id. Nihil officia quibusdam ipsam fugit esse, aspernatur sunt, ea incidunt voluptatibus quis commodi asperiores ut unde vel omnis eius expedita inventore reiciendis assumenda? Minus, cupiditate, fugiat!</p>
+    </div>
+  </div>
+  <div id="product-gallery" class="row">
+    <div class="col-sm-6 col-md-3">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hACG9u8qPfs" allowfullscreen></iframe>
+      </div>
+    </div>
+    <a href="img/category-fire.jpg" title="" class="col-md-1" data-gallery>
+      <img src="img/category-effects.jpg" alt="" class="img-responsive">
+    </a>
+    <a href="img/category-effects.jpg" title="" class="col-md-1" data-gallery>
+      <img src="img/category-effects.jpg" alt="" class="img-responsive">
+    </a>
+  </div>
+</div>
+
+
+
+<!-- Nav tabs -->
+<div class="container">
+  <ul id="product-tabs" class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#models-accessories" aria-controls="models-accessories" role="tab">Models & Accessories</a></li>
+    <li role="presentation"><a href="#specifications" aria-controls="specifications" role="tab">Specifications</a></li>
+    <li role="presentation"><a href="#parts-service" aria-controls="specifications" role="tab">Parts & Service</a></li>
+  </ul>
+</div>
+<!-- Tab panes -->
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="models-accessories">
+    {% include "partials/models-accessories.html" %}
+  </div>
+  <div role="tabpanel" class="tab-pane" id="specifications">
+    <div class="container">
+      {% include "partials/specifications.html" %}
+    </div>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="parts-service">
+    <div class="container">
+      {% include "partials/parts-and-service.html" %}
+    </div>
+  </div>
+</div>
+
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+  <!-- The container for the modal slides -->
+  <div class="slides"></div>
+  <!-- Controls for the borderless lightbox -->
+  <h3 class="title"></h3>
+  <a class="prev">‹</a>
+  <a class="next">›</a>
+  <a class="close">×</a>
+  <a class="play-pause"></a>
+  <ol class="indicator"></ol>
+  <!-- The modal dialog, which will be used to wrap the lightbox content -->
+  <div class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" aria-hidden="true">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body next"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default pull-left prev">
+            <i class="fa fa-chevron-left"></i>
+            Previous
+          </button>
+          <button type="button" class="btn btn-primary next">
+            Next
+            <i class="fa fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

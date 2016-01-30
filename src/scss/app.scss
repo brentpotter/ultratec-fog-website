@@ -1,17 +1,16 @@
 @import "bootstrap.scss";
 @import "mega-nav/MegaNavbar.scss";
 @import "mega-nav/navbar-dark-dark.scss";
+@import "bootstrap-image-gallery.scss";
 
-.navbar{
-  margin-bottom: 0;
-}
+body{background: $gray-lighter;}
+
+.navbar{margin-bottom: 0;}
 .btn-secondary{
   background: $brand-secondary;
   color: white;
 }
-.form-control{
-  height: 33px;
-}
+.form-control{height: 33px;}
 
 //Header//
 
@@ -25,6 +24,9 @@
 
 //Homepage//
 
+#homepage{
+  background: white;
+}
 #masthead{
   color: white;
   background: url('../img/home-bg.jpg');
@@ -78,11 +80,12 @@
     background-size: cover;
   }
   &:nth-child(4){
-    background: url('../img/category-fog-haze.jpg');
+    background: url('../img/category-fluid.jpg');
     background-size: cover;
+    background-position: bottom;
   }
   &:nth-child(5){
-    background: url('../img/category-confetti.jpg');
+    background: url('../img/category-fire.jpg');
     background-size: cover;
   }
 }
@@ -124,14 +127,97 @@
 #cash-caps-advertisement{
   background: url('../img/ultratec-swag.jpg');
   background-size: cover;
-  padding: 100px 0 35px 0;
+  padding: 55px 0 55px 0;
+  @media (min-width: $screen-sm-min){
+    padding: 100px 0 65px 0;
+  }
   .lead{
     color: white;
   }
 }
 
 
+//------PRODUCT PAGE------//
+
+#product-tabs{
+  @media (min-width: $screen-md-min){
+    li{
+      a{
+        font-size: 16px;
+        padding: 20px 40px;
+      }
+    }
+  }
+}
+
+.product-table{
+  .cell-product-image{
+    width: 75px;
+    img{
+      max-width: 75px;
+    }
+  }
+  .cell-quantity{
+    width: 130px;
+    .form-control{
+      width: 50px;
+    }
+  }
+  .cell-buy{
+    width: 80px;
+  }
+}
+
+#product-description{
+  img{
+    margin-top: 30px;
+  }
+}
+
+#product-gallery{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#recommended-fluids{
+  .list-group-item{
+    overflow: hidden;
+  }
+  img{
+    float: left;
+    margin-right: 10px;
+  }
+}
+
+#specifications-table{
+  td{
+    vertical-align: top;
+    padding-bottom: 5px;
+    &:first-child{
+      text-align: right;
+      color: $gray-light;
+    }
+    &:nth-child(2){
+      padding-left: 20px;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+#downloads-list{
+  a{
+    span{
+      float: right;
+    }
+  }
+}
+
+#fluid-consumption-calculator{}
+
+
+//------FOOTER-----//
 footer{
+  margin-top: 40px;
   padding: 30px 0;
   background: $brand-primary;
   .row{

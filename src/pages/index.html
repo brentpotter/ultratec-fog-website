@@ -3,84 +3,87 @@
 
 {% block content %}
 
-<div id="masthead">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-0">
-        <img src="img/ultratec-logo-white.svg" class="img-responsive">
-      </div>
-      <div class="col-xs-10 col-xs-offset-1 col-md-7 col-md-offset-0">
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eum voluptatibus minus qui veniam ipsam eaque cumque earum at, laudantium.</p>
+<div id="homepage">
+  <div id="masthead">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-0">
+          <img src="img/ultratec-logo-white.svg" class="img-responsive">
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-md-7 col-md-offset-0">
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eum voluptatibus minus qui veniam ipsam eaque cumque earum at, laudantium.</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div id="product-categories">
-  <div class="container">
-    <div class="product-category">Fog & Haze</div>
-    <div class="product-category">Haze</div>
-    <div class="product-category">Effects</div>
-    <div class="product-category">Paper</div>
-    <div class="product-category">Fire & Safety</div>
+  <div id="product-categories">
+    <div class="container">
+      <div class="product-category">Fog & Haze</div>
+      <div class="product-category">Effects</div>
+      <div class="product-category">Confetti</div>
+      <div class="product-category">Fluid</div>
+      <div class="product-category">Fire & Safety</div>
+    </div>
   </div>
-</div>
 
-<div id="price-list-download" class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="well">
-        <div class="form-inline">
-          <a class="btn btn-primary">Download Price List (PDF)</a>
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Your e-mail address">
-            <span class="input-group-btn">
-              <button class="btn btn-primary" type="button">E-mail Price List (CSV)</button>
-            </span>
+  <div id="price-list-download" class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="well">
+          <div class="form-inline">
+            <a class="btn btn-primary">Download Price List (PDF)</a>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Your e-mail address">
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="button">E-mail Price List (CSV)</button>
+              </span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<div id="news-events-section" class="container">
-  <div class="row">
-    <section id="recent-news" class="col-md-5">
-      <div class="news-snippet">
-        <a href=""><h3>Title of a news story</h3></a>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quod, natus fuga consequatur minima aliquam dolores totam sunt voluptatem eveniet. Tenetur velit officia, hic, explicabo neque iste fugit inventore id!</p>
-        <a href="" class="pull-right">Full Story</a>
-      </div>
-      <div class="news-snippet">
-        <a href=""><h3>Title of a news story</h3></a>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quod, natus fuga consequatur minima aliquam dolores totam sunt voluptatem eveniet. Tenetur velit officia, hic, explicabo neque iste fugit inventore id!</p>
-        <a href="" class="pull-right">Full Story</a>
-      </div>
-      <a href="" class="btn btn-primary">more stories</a>
-    </section>
-    <section id="important-dates" class="col-md-5 col-md-offset-1">
-      <p class="lead">Events & Important Dates</p>
-      <ul class="list-unstyled">
-        <li class="well">Ultratec will be closed on April 10, 2016</li>
-        <li class="well">Ultratec offices will be closed on February 2, 2016</li>
-      </ul>
-    </section>
-  </div>
-</div>
-
-<section id="cash-caps-advertisement">
-  <div class="container">
+  <!-- MAX 2 NEWS STORIES TO BE DISPLAYED ON FRONT PAGE-->
+  <div id="news-events-section" class="container">
     <div class="row">
-      <div class="col-xs-4 col-md-2">
-        <img src="img/cash-cap.png" class="img-responsive">
-      </div>
-      <div class="col-md-6">
-        <p class="lead"><strong>Want cool swag? Save your fluid caps and cash them in for Ultratec branded clothing.</strong></p>
-        <a href="" class="btn btn-secondary">Cash in your caps</a>
-      </div>
+      <section id="recent-news" class="col-md-5">
+        <div class="news-snippet">
+          <a href=""><h3>Title of a news story</h3></a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quod, natus fuga consequatur minima aliquam dolores totam sunt voluptatem eveniet. Tenetur velit officia, hic, explicabo neque iste fugit inventore id!</p>
+          <a href="" class="pull-right">Full Story</a>
+        </div>
+        <div class="news-snippet">
+          <a href=""><h3>Title of a news story</h3></a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quod, natus fuga consequatur minima aliquam dolores totam sunt voluptatem eveniet. Tenetur velit officia, hic, explicabo neque iste fugit inventore id!</p>
+          <a href="" class="pull-right">Full Story</a>
+        </div>
+        <a href="" class="btn btn-primary">more stories</a>
+      </section>
+      <section id="important-dates" class="col-md-5 col-md-offset-1">
+        <p class="lead">Events & Important Dates</p>
+        <ul class="list-unstyled">
+          <li class="well">Ultratec will be closed on April 10, 2016</li>
+          <li class="well">Ultratec offices will be closed on February 2, 2016</li>
+        </ul>
+      </section>
     </div>
   </div>
-</section>
+
+  <section id="cash-caps-advertisement">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-4 col-md-2">
+          <img src="img/cash-cap.png" class="img-responsive">
+        </div>
+        <div class="col-md-6">
+          <p class="lead"><strong>Want cool swag? Save your fluid caps and cash them in for Ultratec branded clothing.</strong></p>
+          <a href="" class="btn btn-secondary">Cash in your caps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 
 {% endblock %}
