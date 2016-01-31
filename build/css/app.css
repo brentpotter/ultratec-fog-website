@@ -1140,7 +1140,7 @@ hr {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.1;
   color: inherit; }
   h1 small,
@@ -1194,16 +1194,16 @@ h6, .h6 {
     font-size: 75%; }
 
 h1, .h1 {
-  font-size: 36px; }
+  font-size: 28px; }
 
 h2, .h2 {
-  font-size: 30px; }
+  font-size: 21px; }
 
 h3, .h3 {
-  font-size: 24px; }
+  font-size: 17px; }
 
 h4, .h4 {
-  font-size: 18px; }
+  font-size: 16px; }
 
 h5, .h5 {
   font-size: 14px; }
@@ -7773,6 +7773,17 @@ body {
 .form-control {
   height: 33px; }
 
+.table .btn-secondary {
+  background: none;
+  color: #F56E23;
+  border: 1px solid #F56E23; }
+  .table .btn-secondary:hover {
+    color: #aa4208;
+    border: 1px solid #aa4208; }
+
+.embed-responsive {
+  margin-bottom: 20px; }
+
 #main-header {
   background: #0055A7; }
 
@@ -7870,10 +7881,20 @@ body {
   #cash-caps-advertisement .lead {
     color: white; }
 
-@media (min-width: 992px) {
-  #product-tabs li a {
-    font-size: 16px;
-    padding: 20px 40px; } }
+#product-tabs {
+  border: 0; }
+  @media (min-width: 992px) {
+    #product-tabs li {
+      border: 0; }
+      #product-tabs li a {
+        border: 0;
+        font-size: 16px;
+        padding: 20px 40px; } }
+
+#product-tabs-container .tab-pane {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: white; }
 
 .product-table .cell-product-image {
   width: 75px; }
@@ -7915,8 +7936,20 @@ body {
 #downloads-list a span {
   float: right; }
 
+#fluid-consumption-calculator .input-group-addon {
+  width: 150px;
+  text-align: right; }
+
+#fluid-consumption-calculator .number-of-cues {
+  margin-bottom: 20px; }
+
+#fluid-consumption-calculator .continuous-time {
+  margin-bottom: 10px; }
+
+#parts-identification-blowouts, #wiring-diagrams, #service-photos, #service-videos {
+  margin-bottom: 40px; }
+
 footer {
-  margin-top: 40px;
   padding: 30px 0;
   background: #0055A7; }
   footer .row:first-child {

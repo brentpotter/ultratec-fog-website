@@ -4,6 +4,7 @@
 {% block content %}
 
 <div id="homepage">
+  <!--MASTHEAD SECTION-->
   <div id="masthead">
     <div class="container">
       <div class="row">
@@ -16,7 +17,9 @@
       </div>
     </div>
   </div>
+  <!--END OF MASTHEAD SECTION-->
 
+  <!--PRODUCT CATEGORIES SECTION-->
   <div id="product-categories">
     <div class="container">
       <div class="product-category">Fog & Haze</div>
@@ -26,7 +29,9 @@
       <div class="product-category">Fire & Safety</div>
     </div>
   </div>
+  <!--END OF PRODUCT CATEGORIES SECTION-->
 
+  <!--PRICE LIST DOWNLOADS-->
   <div id="price-list-download" class="container">
     <div class="row">
       <div class="col-md-12">
@@ -44,34 +49,44 @@
       </div>
     </div>
   </div>
+  <!--END OF PRICE LIST DOWNLOADS-->
 
-  <!-- MAX 2 NEWS STORIES TO BE DISPLAYED ON FRONT PAGE-->
+  <!--NEWS AND IMPORTANT DATES SECTION-->
   <div id="news-events-section" class="container">
     <div class="row">
-      <section id="recent-news" class="col-md-5">
+      <div id="recent-news" class="col-md-5">
+        <!-- MAX 2 NEWS STORIES TO BE DISPLAYED ON FRONT PAGE-->
+        <!--NEWS SNIPPET-->
         <div class="news-snippet">
           <a href=""><h3>Title of a news story</h3></a>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quod, natus fuga consequatur minima aliquam dolores totam sunt voluptatem eveniet. Tenetur velit officia, hic, explicabo neque iste fugit inventore id!</p>
           <a href="" class="pull-right">Full Story</a>
         </div>
+        <!--END OF NEWS SNIPPET-->
+        <!--NEWS SNIPPET-->
         <div class="news-snippet">
           <a href=""><h3>Title of a news story</h3></a>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quod, natus fuga consequatur minima aliquam dolores totam sunt voluptatem eveniet. Tenetur velit officia, hic, explicabo neque iste fugit inventore id!</p>
           <a href="" class="pull-right">Full Story</a>
         </div>
+        <!--END OF NEWS SNIPPET-->
         <a href="" class="btn btn-primary">more stories</a>
-      </section>
-      <section id="important-dates" class="col-md-5 col-md-offset-1">
+      </div>
+      <!--IMPORTANT DATES SECTION-->
+      <div id="important-dates" class="col-md-5 col-md-offset-1">
         <p class="lead">Events & Important Dates</p>
         <ul class="list-unstyled">
           <li class="well">Ultratec will be closed on April 10, 2016</li>
           <li class="well">Ultratec offices will be closed on February 2, 2016</li>
         </ul>
-      </section>
+      </div>
+      <!--END OF IMPORTANT DATES SECTION-->
     </div>
   </div>
+  <!--END OF NEWS AND IMPORTANT DATES SECTION-->
 
-  <section id="cash-caps-advertisement">
+  <!--CASH IN THE CAPS SECTION-->
+  <div id="cash-caps-advertisement">
     <div class="container">
       <div class="row">
         <div class="col-xs-4 col-md-2">
@@ -83,7 +98,8 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
+  <!--CASH IN THE CAPS SECTION-->
 </div>
 
 {% endblock %}

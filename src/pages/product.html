@@ -3,6 +3,7 @@
 
 {% block content %}
 
+<!--PRODUCT DESCRIPTION SECTION-->
 <div class="container">
   <div id="product-description" class="row">
     <div class="col-sm-4 col-md-3">
@@ -13,23 +14,28 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, unde blanditiis nesciunt at porro eius excepturi, aperiam et! Praesentium alias ab porro, molestias ex inventore sint numquam, iste, facere nostrum enim illo, reprehenderit dignissimos nihil fugiat. Sapiente facere fuga laudantium velit quia repellendus quas vitae eligendi quasi voluptas sed est unde quos quis ullam, earum magni. Nam ratione perferendis neque et omnis placeat accusamus quae assumenda magni consectetur! Repudiandae cupiditate, soluta a dicta id. Nihil officia quibusdam ipsam fugit esse, aspernatur sunt, ea incidunt voluptatibus quis commodi asperiores ut unde vel omnis eius expedita inventore reiciendis assumenda? Minus, cupiditate, fugiat!</p>
     </div>
   </div>
+  <!--GALLERY SECTION-->
   <div id="product-gallery" class="row">
+    <!--VIDEO ITEM-->
     <div class="col-sm-6 col-md-3">
       <div class="embed-responsive embed-responsive-16by9">
         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hACG9u8qPfs" allowfullscreen></iframe>
       </div>
     </div>
-    <a href="img/category-fire.jpg" title="" class="col-md-1" data-gallery>
-      <img src="img/category-effects.jpg" alt="" class="img-responsive">
+    <!--IMAGE ITEM-->
+    <a href="img/category-fire.jpg" title="" class="col-xs-3 col-sm-3 col-md-1" data-gallery>
+      <img src="http://placehold.it/200x200" alt="" class="img-responsive">
     </a>
-    <a href="img/category-effects.jpg" title="" class="col-md-1" data-gallery>
-      <img src="img/category-effects.jpg" alt="" class="img-responsive">
+    <!--IMAGE ITEM-->
+    <a href="img/category-effects.jpg" title="" class="col-xs-3 col-sm-3 col-md-1" data-gallery>
+      <img src="http://placehold.it/200x200" alt="" class="img-responsive">
     </a>
   </div>
+  <!--END OF GALLERY SECTION-->
 </div>
+<!--END OF PRODUCT DESCRIPTION SECTION-->
 
-
-
+<!--TABS SECTION FOR MODELS, SPECS AND PARTS-SERVICE-->
 <!-- Nav tabs -->
 <div class="container">
   <ul id="product-tabs" class="nav nav-tabs" role="tablist">
@@ -39,9 +45,11 @@
   </ul>
 </div>
 <!-- Tab panes -->
-<div class="tab-content">
+<div id="product-tabs-container" class="tab-content">
   <div role="tabpanel" class="tab-pane active" id="models-accessories">
-    {% include "partials/models-accessories.html" %}
+    <div class="container">
+      {% include "partials/models-accessories.html" %}
+    </div>
   </div>
   <div role="tabpanel" class="tab-pane" id="specifications">
     <div class="container">
@@ -54,6 +62,7 @@
     </div>
   </div>
 </div>
+<!--END OF TABS SECTION-->
 
 <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
 <div id="blueimp-gallery" class="blueimp-gallery">
