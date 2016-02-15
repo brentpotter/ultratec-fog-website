@@ -7791,7 +7791,17 @@ body {
   background: #0055A7; }
 
 #dealer-nav {
-  background: #00488e; }
+  background: #003b74;
+  color: white; }
+  #dealer-nav p {
+    line-height: 1em;
+    margin: 0;
+    padding: 8px 0;
+    margin-right: 10px; }
+  #dealer-nav a {
+    color: white; }
+  #dealer-nav .btn {
+    margin-right: 1px; }
 
 #homepage {
   background: white; }
@@ -8006,6 +8016,23 @@ body {
 
 #warranty-info {
   margin-bottom: 40px; }
+
+#dealer-login-panel {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  #dealer-login-panel .panel-heading {
+    padding: 20px 40px; }
+  #dealer-login-panel .panel-body {
+    padding: 40px; }
+
+#search-results-nav {
+  margin-bottom: 40px; }
+  #search-results-nav .current-page {
+    width: 50px; }
+  #search-results-nav .results-per-page {
+    width: 140px; }
+  #search-results-nav .form-group {
+    margin-right: 10px; }
 
 footer {
   padding: 30px 0;

@@ -36,7 +36,20 @@ body{background: $gray-lighter;}
 }
 
 #dealer-nav{
-  background: darken($brand-primary, 5%);
+  background: darken($brand-primary, 10%);
+  color: white;
+  p{
+    line-height: 1em;
+    margin: 0;
+    padding: 8px 0;
+    margin-right: 10px;
+  }
+  a{
+    color: white;
+  }
+  .btn{
+    margin-right: 1px;
+  }
 }
 
 //Homepage//
@@ -320,6 +333,34 @@ body{background: $gray-lighter;}
 
 #warranty-info{
   margin-bottom: 40px;
+}
+
+//------DEALER LOGIN------//
+
+#dealer-login-panel{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  .panel-heading{
+    padding: 20px 40px;
+  }
+  .panel-body,{
+    padding: 40px;
+  }
+}
+
+//------SEARCH RESULTS-----//
+
+#search-results-nav{
+  margin-bottom: 40px;
+  .current-page{
+    width: 50px;
+  }
+  .results-per-page{
+    width: 140px;
+  }
+  .form-group{
+    margin-right: 10px;
+  }
 }
 
 //------FOOTER-----//

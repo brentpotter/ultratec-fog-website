@@ -295,97 +295,48 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <h2>Gallery</h2> </div>
-      </div>
-      <div id="image-gallery" class="row">
-        <div class="col-xs-6 col-sm-4 col-md-2">
-          <div class="thumbnail">
-            <a href="img/gallery/superbowl-xxxvii.jpg" title="Superbowl XXXVII" class="" data-gallery> <img src="img/gallery/thumbs/superbowl-xxxvii--thumb.jpg" alt=""> </a>
-            <div class="caption">
-              <p><small>Superbowl XXXVII</small></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-6 col-sm-4 col-md-2">
-          <div class="thumbnail">
-            <a href="img/gallery/ringling-brothers-and-barnum-and-bailey-circus.jpg" title="Ringling Brothers and Barnum and Bailey Circus" class="" data-gallery> <img src="img/gallery/thumbs/ringling-brothers-and-barnum-and-bailey-circus--thumb.jpg" alt=""> </a>
-            <div class="caption">
-              <p><small>Ringling Brothers...</small></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-6 col-sm-4 col-md-2">
-          <div class="thumbnail">
-            <a href="img/gallery/fog-shuttle.jpg" title="" class="" data-gallery> <img src="img/gallery/thumbs/fog-shuttle--thumb.jpg" alt=""> </a>
-            <div class="caption">
-              <p><small></small></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-6 col-sm-4 col-md-2">
-          <div class="thumbnail">
-            <a href="img/gallery/concert-lsg.jpg" title="Concert - LSG" class="" data-gallery> <img src="img/gallery/thumbs/concert-lsg--thumb.jpg" alt=""> </a>
-            <div class="caption">
-              <p><small>Concert - LSG</small></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-6 col-sm-4 col-md-2">
-          <div class="thumbnail">
-            <a href="img/gallery/aig-ice-stage.jpg" title="AIG Ice Stage" class="" data-gallery> <img src="img/gallery/thumbs/aig-ice-stage--thumb.jpg" alt=""> </a>
-            <div class="caption">
-              <p><small>AIG Ice Stage</small></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-6 col-sm-4 col-md-2">
-          <div class="thumbnail">
-            <a href="img/gallery/01-disney-on-ice-haze.jpg" title="Disney on Ice - Haze" class="" data-gallery> <img src="img/gallery/thumbs/01-disney-on-ice-haze--thumb.jpg" alt=""> </a>
-            <div class="caption">
-              <p><small>Disney on Ice - Haze</small></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-6 col-sm-4 col-md-2">
-          <div class="thumbnail">
-            <a href="img/gallery/02-disney-on-ice-haze.jpg" title="Disney on Ice - Haze" class="" data-gallery> <img src="img/gallery/thumbs/02-disney-on-ice-haze--thumb.jpg" alt=""> </a>
-            <div class="caption">
-              <p><small>Disney on Ice - Haze</small></p>
+        <div class="col-md-6 col-md-offset-3">
+          <div id="dealer-login-panel" class="panel panel-default">
+            <div class="panel-heading">
+              <h1>Dealer login</h1> </div>
+            <div class="panel-body">
+              <p class="lead">Dealers please log in below to access special features of the web site.</p>
+              <form>
+                <div class="form-group">
+                  <label for="">Login name</label>
+                  <input type="" class="form-control" id="" placeholder=""> </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="" placeholder=""> </div>
+                <br>
+                <button type="submit" class="btn btn-primary">Login</button>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-default pull-right" data-toggle="modal" data-target="#myModal"> Forgot Password? </button>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div id="youtube-channel">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-            <a href="https://www.youtube.com/user/FogUltratecSPFX"> <img src="img/youtube-player.png" alt="Ultratec's youtube channel" class="img-responsive"> </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
-    <div id="blueimp-gallery" class="blueimp-gallery">
-      <!-- The container for the modal slides -->
-      <div class="slides"></div>
-      <!-- Controls for the borderless lightbox -->
-      <h3 class="title"></h3> <a class="prev">‹</a> <a class="next">›</a> <a class="close">×</a>
-      <a class="play-pause"></a>
-      <ol class="indicator"></ol>
-      <!-- The modal dialog, which will be used to wrap the lightbox content -->
-      <div class="modal fade">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" aria-hidden="true">&times;</button>
-              <h4 class="modal-title"></h4> </div>
-            <div class="modal-body next"></div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default pull-left prev"> <i class="fa fa-chevron-left"></i> Previous </button>
-              <button type="button" class="btn btn-primary next"> Next <i class="fa fa-chevron-right"></i> </button>
-            </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Forgot your password?</h4> </div>
+          <div class="modal-body">
+            <p>Enter your email address then click the Email My Password button. We'll email password to the address you have previously registered.</p>
+            <form>
+              <div class="form-group">
+                <label for="">E-mail address<span class="text-danger">*</span></label>
+                <input type="" class="form-control" id="" placeholder=""> </div> Captha code here
+              <div class="form-group">
+                <label for="exampleInputPassword1">Please type the code above:</label>
+                <input type="password" class="form-control" id="" placeholder=""> </div>
+              <br>
+              <button type="submit" class="btn btn-primary">Email my password</button>
+            </form>
           </div>
         </div>
       </div>
