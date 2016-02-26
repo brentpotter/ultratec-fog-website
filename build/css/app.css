@@ -7773,6 +7773,9 @@ body {
 .form-control {
   height: 33px; }
 
+.table td {
+  vertical-align: middle !important; }
+
 .table .btn-secondary {
   background: none;
   color: #F56E23;
@@ -7787,21 +7790,32 @@ body {
 .spacer {
   height: 30px; }
 
+.form-spacer {
+  height: 33px; }
+
+.default-template-well {
+  margin-top: 40px;
+  margin-bottom: 20px; }
+
+.form-inline .form-group {
+  margin-bottom: 15px; }
+
 #main-header {
   background: #0055A7; }
 
 #dealer-nav {
   background: #003b74;
-  color: white; }
-  #dealer-nav p {
-    line-height: 1em;
-    margin: 0;
-    padding: 8px 0;
-    margin-right: 10px; }
+  color: white;
+  padding-top: 10px; }
+  #dealer-nav .account-name {
+    margin-top: 4px; }
   #dealer-nav a {
-    color: white; }
+    color: #41a2ff; }
   #dealer-nav .btn {
-    margin-right: 1px; }
+    color: white !important; }
+  @media (min-width: 768px) {
+    #dealer-nav .cart-info p {
+      float: right; } }
 
 #homepage {
   background: white; }
@@ -7919,7 +7933,7 @@ body {
   .product-table .cell-quantity .form-control {
     width: 50px; }
 
-.product-table .cell-buy {
+.product-table .cell-buy, .product-table .cell-remove {
   width: 80px; }
 
 #product-description img {
@@ -8033,6 +8047,28 @@ body {
     width: 140px; }
   #search-results-nav .form-group {
     margin-right: 10px; }
+
+#my-account-menu {
+  margin-top: 30px; }
+
+.account-info-panel p.lead {
+  margin: 0;
+  padding: 0; }
+
+#account-info-tabs {
+  border: 0; }
+  @media (min-width: 992px) {
+    #account-info-tabs li {
+      border: 0; }
+      #account-info-tabs li a {
+        border: 0;
+        font-size: 16px;
+        padding: 20px 40px; } }
+
+#account-info-tabs-container .tab-pane {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: white; }
 
 footer {
   padding: 30px 0;

@@ -1,0 +1,166 @@
+<!-- checkout-process-03.html -->
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Checkout</h1>
+    </div>
+  </div>
+</div>
+
+<div class="spacer"></div>
+
+<!--Checkout State-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <ul class="nav nav-tabs tav-justified">
+        <li role="presentation" class="disabled"><a href="#">Step 1: Address Information</a></li>
+        <li role="presentation" class="disabled"><a href="#">Step 2: Choose Shipping Method</a></li>
+        <li role="presentation" class="active"><a href="#">Step 3: Payment Information</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--End of checkout state-->
+
+<div class="spacer"></div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <p><strong>Bill to:</strong></p>
+      <address>
+        Marnie Styles<br>
+        Ultratec Special Effects<br>
+        3665 Dove Road<br>
+        Port Huron, MI<br>
+        US<br>
+        48060
+      </address>
+    </div>
+    <div class="col-md-4">
+      <p><strong>Ship to:</strong></p>
+      <address>
+        Marnie Styles<br>
+        Ultratec Special Effects<br>
+        3665 Dove Road<br>
+        Port Huron, MI<br>
+        US<br>
+        48060
+      </address>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped product-table">
+          <thead>
+            <tr>
+              <th>Qty	Unit</th>
+              <th>Product</th>
+              <th>Description</th>
+              <th>Unit Price</th>
+              <th>Ext Price</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1	Each</td>
+              <td>CLF2943</td>
+              <td>LSG DMX Interface 220V</td>
+              <td>$615.00 USD</td>
+              <td>$615.00 USD</td>
+            </tr>
+            <tr>
+              <td>1	Each</td>
+              <td>CLF2943</td>
+              <td>LSG DMX Interface 220V</td>
+              <td>$615.00 USD</td>
+              <td>$615.00 USD</td>
+            </tr>
+            <tr>
+              <td>1	Each</td>
+              <td>CLF2943</td>
+              <td>LSG DMX Interface 220V</td>
+              <td>$615.00 USD</td>
+              <td>$615.00 USD</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3"></td>
+              <td>Subtotal</td>
+              <td>$615.00 USD</td>
+            </tr>
+            <tr>
+              <td colspan="3"></td>
+              <td>Shipping</td>
+              <td>$0.00</td>
+            </tr>
+            <tr>
+              <td colspan="3"></td>
+              <td>Tax</td>
+              <td>$0.00</td>
+            </tr>
+            <tr>
+              <td colspan="3"></td>
+              <td><strong>Total</strong></td>
+              <td><strong>$1845.00 USD</strong></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="col-md-6 col-md-offset-6">
+    <form class="form-horizontal">
+      <div class="form-group">
+        <div class="radio">
+          <label>
+            <input type="radio" name="" id="" value="" checked>
+            Bill my account
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="" class="col-sm-3 control-label">Purchase Order #</label>
+        <div class="col-sm-6">
+          <input type="" class="form-control" id="" placeholder="">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            I accept the <a href="terms-conditions.html">Terms and Conditions</a>
+          </label>
+        </div>
+        <div class="checkbox disabled">
+          <label>
+            <input type="checkbox" value="">
+            Opt into our e-mail list
+          </label>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <a class="btn btn-lg btn-primary pull-right" href="checkout-process-03.html">Submit Order</a>
+    </div>
+  </div>
+</div>
+<div class="spacer"></div>
+
+{% endblock %}

@@ -12,6 +12,9 @@ body{background: $gray-lighter;}
 }
 .form-control{height: 33px;}
 .table{
+  td{
+    vertical-align: middle !important;
+  }
   .btn-secondary{
     background: none;
     color: $brand-secondary;
@@ -28,6 +31,18 @@ body{background: $gray-lighter;}
 .spacer{
   height: 30px;
 }
+.form-spacer{
+  height: 33px;
+}
+.default-template-well{
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.form-inline{
+  .form-group{
+    margin-bottom: 15px;
+  }
+}
 
 //Header//
 
@@ -38,17 +53,22 @@ body{background: $gray-lighter;}
 #dealer-nav{
   background: darken($brand-primary, 10%);
   color: white;
-  p{
-    line-height: 1em;
-    margin: 0;
-    padding: 8px 0;
-    margin-right: 10px;
+  padding-top: 10px;
+  .account-name{
+    margin-top: 4px;
   }
   a{
-    color: white;
+    color: lighten($brand-primary, 30%);
   }
   .btn{
-    margin-right: 1px;
+    color: white !important;
+  }
+  @media (min-width: $screen-sm-min){
+    .cart-info{
+      p{
+        float: right;
+      }
+    }
   }
 }
 
@@ -203,7 +223,7 @@ body{background: $gray-lighter;}
       width: 50px;
     }
   }
-  .cell-buy{
+  .cell-buy, .cell-remove{
     width: 80px;
   }
 }
@@ -360,6 +380,40 @@ body{background: $gray-lighter;}
   }
   .form-group{
     margin-right: 10px;
+  }
+}
+
+//------ACCOUNT INFORMATION-----//
+
+#my-account-menu{
+  margin-top: 30px;
+}
+
+.account-info-panel{
+  p.lead{
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#account-info-tabs{
+  border: 0;
+  @media (min-width: $screen-md-min){
+    li{
+      border: 0;
+      a{
+        border: 0;
+        font-size: 16px;
+        padding: 20px 40px;
+      }
+    }
+  }
+}
+#account-info-tabs-container{
+  .tab-pane{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: white;
   }
 }
 

@@ -1,0 +1,131 @@
+<!-- my-orders.html -->
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% include "partials/my-account-menu.html" %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Order History</h1>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <div class="row">
+    <div class="col-md-12">
+      <dl>
+        <dt>Customer Number</dt>
+        <dd>...</dd>
+        <dt>Customer Name</dt>
+        <dd>...</dd>
+        <dt>Phone</dt>
+        <dd>...</dd>
+        <dt>Contact</dt>
+        <dd>...</dd>
+        <dt>Billing Address</dt>
+        <dd>...</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-9">
+      <form class="form-inline">
+        <div class="form-group">
+          <label for="">Customer</label>
+          <input type="text" class="form-control" id="" placeholder="Customer" disabled>
+        </div>
+        <div class="form-group">
+          <label for="">Order Number</label>
+          <input type="text" class="form-control" id="" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="">PO Number</label>
+          <input type="text" class="form-control" id="" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="">From:</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="" placeholder="Date">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
+            </span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="">To:</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="" placeholder="Date">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
+            </span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="">Status</label>
+          <select class="form-control">
+            <option>Any</option>
+            <option>Complete</option>
+            <option>Incomplete</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <button type="" class="btn btn-default">Go</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped product-table">
+              <thead>
+                <tr>
+                  <th>Customer</th>
+                  <th>Order </th>
+                  <th>#	Date</th>
+                  <th>Status</th>
+                  <th>P/O Number</th>
+                  <th>Tracking Number</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                </tr>
+                <tr>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                </tr>
+                <tr>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

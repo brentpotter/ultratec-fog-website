@@ -1,0 +1,189 @@
+<!-- review-order.html -->
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Review your order</h1>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped product-table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th></th>
+              <th>Quantity</th>
+              <th>Unit</th>
+              <th>Ext. Price</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="cell-product-number">CLF-4520</td>
+              <td class="cell-product-name">Premier Fog Effects Generator 120V</td>
+              <td class="cell-quantity">
+                <div class="input-group">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                      <i class="fa fa-minus"></i>
+                    </button>
+                  </span>
+                  <input type="text" class="form-control" placeholder="0">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                      <i class="fa fa-plus"></i>
+                    </button>
+                  </span>
+                </div>
+              </td>
+              <td>
+                <select class="form-control">
+                  <option>1/Each $981.40 USD</option>
+                </select>
+              </td>
+              <td>$981.40 USD</td>
+              <td class="cell-remove">
+                <a href="" class="btn btn-secondary">Remove</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="cell-product-number">CLF-4520</td>
+              <td class="cell-product-name">Premier Fog Effects Generator 120V</td>
+              <td class="cell-quantity">
+                <div class="input-group">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                      <i class="fa fa-minus"></i>
+                    </button>
+                  </span>
+                  <input type="text" class="form-control" placeholder="0">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                      <i class="fa fa-plus"></i>
+                    </button>
+                  </span>
+                </div>
+              </td>
+              <td>
+                <select class="form-control">
+                  <option>1/Each $981.40 USD</option>
+                </select>
+              </td>
+              <td>$981.40 USD</td>
+              <td class="cell-remove">
+                <a href="" class="btn btn-secondary">Remove</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="cell-product-number">CLF-4520</td>
+              <td class="cell-product-name">Premier Fog Effects Generator 120V</td>
+              <td class="cell-quantity">
+                <div class="input-group">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                      <i class="fa fa-minus"></i>
+                    </button>
+                  </span>
+                  <input type="text" class="form-control" placeholder="0">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                      <i class="fa fa-plus"></i>
+                    </button>
+                  </span>
+                </div>
+              </td>
+              <td>
+                <select class="form-control">
+                  <option>1/Each $981.40 USD</option>
+                </select>
+              </td>
+              <td>$981.40 USD</td>
+              <td class="cell-remove">
+                <a href="" class="btn btn-secondary">Remove</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <a href="checkout-process-01.html" class="btn btn-success">Checkout</a>
+      <a href="" class="btn btn-primary">Remove All</a>
+    </div>
+  </div>
+</div>
+<div class="spacer"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="well">
+        <ul>
+          <li>To change ordering quantity, enter a new quantity in the space provided on each line.</li>
+          <li>To remove a product from your order, click the "Remove" link.</li>
+          <li>To start over, click the Remove All button to remove all products from this order</li>
+          <li>Click the Checkout button to begin processing this order</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <p>You can save this shopping cart and complete your order later</p>
+      <form class="form-inline">
+        <div class="form-group">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Share
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for=""></label>
+          <input type="email" class="form-control" id="" placeholder="">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-default">Save cart as</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="spacer"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <p>You have previously saved these shopping carts</p>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped product-table">
+          <thead>
+            <tr>
+              <th>Date Shared</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>...</td>
+              <td>...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="spacer"></div>
+{% endblock %}

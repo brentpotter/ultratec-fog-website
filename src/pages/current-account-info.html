@@ -1,0 +1,173 @@
+<!-- current-account-info.html -->
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% include "partials/my-account-menu.html" %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Account Information</h1>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <div class="row">
+    <div class="col-md-3">
+      <dl>
+        <dt>Customer Number</dt>
+        <dd>...</dd>
+        <dt>Customer Name</dt>
+        <dd>...</dd>
+        <dt>Phone</dt>
+        <dd>...</dd>
+        <dt>Contact</dt>
+        <dd>...</dd>
+        <dt>Billing Address</dt>
+        <dd>...</dd>
+      </dl>
+    </div>
+    <div class="col-md-9">
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="panel panel-default account-info-panel">
+            <div class="panel-heading">
+              <h3 class="panel-title">Last Statement Date</h3>
+            </div>
+            <div class="panel-body">
+              <p class="lead text-center">Aug 12,2010</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="panel panel-default account-info-panel">
+            <div class="panel-heading">
+              <h3 class="panel-title">Outstanding Balance</h3>
+            </div>
+            <div class="panel-body">
+              <p class="lead text-center">$(637.80) USD</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="panel panel-default account-info-panel">
+            <div class="panel-heading">
+              <h3 class="panel-title">Last Invoice Balance</h3>
+            </div>
+            <div class="panel-body">
+              <p class="lead text-center">$0.00 USD</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="panel panel-default account-info-panel">
+            <div class="panel-heading">
+              <h3 class="panel-title">Last Invoice Date</h3>
+            </div>
+            <div class="panel-body">
+              <p class="lead text-center">Feb 10,2016</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="panel panel-default account-info-panel">
+            <div class="panel-heading">
+              <h3 class="panel-title">Last Payment Date</h3>
+            </div>
+            <div class="panel-body">
+              <p class="lead text-center">Jan 12,2016</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="panel panel-default account-info-panel">
+            <div class="panel-heading">
+              <h3 class="panel-title">Last Payment Amount</h3>
+            </div>
+            <div class="panel-body">
+              <p class="lead text-center">$(444.12) USD</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped product-table">
+          <thead>
+            <tr>
+              <th>Customer</th>
+              <th>Invoice #</th>
+              <th>Invoice Date</th>
+              <th>Due Date</th>
+              <th>Amount</th>
+              <th>Balance Due</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+            </tr>
+            <tr>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+            </tr>
+            <tr>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+</div>
+<!--TABS SECTION FOR MODELS, SPECS AND PARTS-SERVICE-->
+<!-- Nav tabs -->
+<div class="container">
+  <ul id="account-info-tabs" class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#transactions" aria-controls="transactions" role="tab">Transactions</a></li>
+    <li role="presentation"><a href="#payments" aria-controls="payments" role="tab">Payments</a></li>
+    <li role="presentation"><a href="#upload-your-order" aria-controls="upload-your-order" role="tab">Upload Your Order</a></li>
+  </ul>
+</div>
+<!-- Tab panes -->
+<div id="account-info-tabs-container" class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="transactions">
+    <div class="container">
+      {% include "partials/transactions.html" %}
+    </div>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="payments">
+    <div class="container">
+      {% include "partials/payments.html" %}
+    </div>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="upload-your-order">
+    <div class="container">
+      {% include "partials/upload-order.html" %}
+    </div>
+  </div>
+</div>
+<!--END OF TABS SECTION-->
+
+{% endblock %}

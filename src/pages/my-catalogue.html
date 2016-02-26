@@ -1,0 +1,109 @@
+<!-- my-catalogue.html -->
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% include "partials/my-account-menu.html" %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>My Catalogue</h1>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped product-table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th></th>
+              <th>List</th>
+              <th>Dealer</th>
+              <th>Quantity</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="cell-product-number">CLF-4520</td>
+              <td class="cell-product-name">Premier Fog Effects Generator 120V</td>
+              <td class="cell-price">$1400.00</td>
+              <td class="cell-price">$1400.00</td>
+              <td class="cell-quantity">
+                <div class="input-group">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                      <i class="fa fa-minus"></i>
+                    </button>
+                  </span>
+                  <input type="text" class="form-control" placeholder="0">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                      <i class="fa fa-plus"></i>
+                    </button>
+                  </span>
+                </div>
+              </td>
+              <td class="cell-buy">
+                <a href="" class="btn btn-secondary">Add to Cart</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="cell-product-number">CLF-4520</td>
+              <td class="cell-product-name">Premier Fog Effects Generator 120V</td>
+              <td class="cell-price">$1400.00</td>
+              <td class="cell-price">$1400.00</td>
+              <td class="cell-quantity">
+                <div class="input-group">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                      <i class="fa fa-minus"></i>
+                    </button>
+                  </span>
+                  <input type="text" class="form-control" placeholder="0">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                      <i class="fa fa-plus"></i>
+                    </button>
+                  </span>
+                </div>
+              </td>
+              <td class="cell-buy">
+                <a href="" class="btn btn-secondary">Add to Cart</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="cell-product-number">CLF-4520</td>
+              <td class="cell-product-name">Premier Fog Effects Generator 120V</td>
+              <td class="cell-price">$1400.00</td>
+              <td class="cell-price">$1400.00</td>
+              <td class="cell-quantity">
+                <div class="input-group">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                      <i class="fa fa-minus"></i>
+                    </button>
+                  </span>
+                  <input type="text" class="form-control" placeholder="0">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                      <i class="fa fa-plus"></i>
+                    </button>
+                  </span>
+                </div>
+              </td>
+              <td class="cell-buy">
+                <a href="" class="btn btn-secondary">Add to Cart</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
