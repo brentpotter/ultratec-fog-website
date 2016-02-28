@@ -3,35 +3,41 @@
 
 {% block content %}
 
+
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <h1>Checkout</h1>
+      <h1 class="text-success"><i class="fa fa-check-circle"></i> Thank you for your order</h1>
     </div>
   </div>
 </div>
 
 <div class="spacer"></div>
 
-<!--Checkout State-->
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <ul class="nav nav-tabs tav-justified">
-        <li role="presentation" class="disabled"><a href="#">Step 1: Address Information</a></li>
-        <li role="presentation" class="disabled"><a href="#">Step 2: Choose Shipping Method</a></li>
-        <li role="presentation" class="active"><a href="#">Step 3: Payment Information</a></li>
-      </ul>
+      <p class="text-muted">Please print this page for your records</p>
     </div>
   </div>
-</div>
-<!--End of checkout state-->
-
-<div class="spacer"></div>
-
-<div class="container">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-sm-4">
+      <dl>
+        <dt>Customer</dt>
+        <dd>FLAS001</dd>
+        <dt>Order Number</dt>
+        <dd>ORDW00016</dd>
+        <dt>P/O Number</dt>
+        <dd>---</dd>
+        <dt>Date</dt>
+        <dd>2/23/2016</dd>
+        <dt>Terms</dt>
+        <dd>WIRE</dd>
+        <dt>Payment Authorization</dt>
+        <dd>--</dd>
+      </dl>
+    </div>
+    <div class="col-sm-4">
       <p><strong>Bill to:</strong></p>
       <address>
         Marnie Styles<br>
@@ -42,7 +48,7 @@
         48060
       </address>
     </div>
-    <div class="col-md-4">
+    <div class="col-sm-4">
       <p><strong>Ship to:</strong></p>
       <address>
         Marnie Styles<br>
@@ -54,7 +60,18 @@
       </address>
     </div>
   </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="well">
+        <p class="text-muted">Special Instructions:</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat doloribus dignissimos est odio assumenda eum architecto, dolore vel! Asperiores iusto veniam illo adipisci, cupiditate ab. Vel blanditiis accusantium in repudiandae!</p>
+      </div>
+    </div>
+  </div>
 </div>
+
+<div class="spacer"></div>
+
 <div class="container">
   <div class="row">
     <div class="col-md-12">
@@ -120,47 +137,15 @@
     </div>
   </div>
 </div>
-<div class="container">
-  <div class="col-md-6 col-md-offset-6">
-    <form class="form-horizontal">
-      <div class="form-group">
-        <div class="radio">
-          <label>
-            <input type="radio" name="" id="" value="" checked>
-            Bill my account
-          </label>
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="" class="col-sm-3 control-label">Purchase Order #</label>
-        <div class="col-sm-6">
-          <input type="" class="form-control" id="" placeholder="">
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="">
-            I accept the <a href="terms-conditions.html">Terms and Conditions</a>
-          </label>
-        </div>
-        <div class="checkbox disabled">
-          <label>
-            <input type="checkbox" value="">
-            Opt into our e-mail list
-          </label>
-        </div>
-      </div>
-    </form>
-  </div>
-</div>
+
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <a class="btn btn-lg btn-primary pull-right" href="checkout-process-thankyou.html">Submit Order</a>
+      <a href="index.html" class="btn btn-lg btn-primary pull-right">Continue Shopping</a>
     </div>
   </div>
 </div>
+
 <div class="spacer"></div>
 
 {% endblock %}
