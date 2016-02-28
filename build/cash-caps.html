@@ -481,38 +481,6 @@
           e.stopPropagation();
         })
       });
-      // Carousel
-      $('.carousel').carousel(
-      {
-        interval: 1500
-      });
-      // Tabs on hover
-      $(function()
-      {
-        $('.dropdown, .dropdown-wide, .dropdown-full, .dropdown-short, .dropdown-grid').mouseenter(function()
-        {
-          if (!('ontouchstart' in window)) $(this).addClass('open');
-        }).mouseleave(function()
-        {
-          if (!('ontouchstart' in window)) $(this).removeClass('open');
-        }).click(function(e)
-        {
-          if (!('ontouchstart' in window)) e.stopPropagation();
-        });
-        $('[data-toggle=tab]').mouseenter(function(e)
-        {
-          e.preventDefault();
-          $(this).tab('show');
-          $(this).closest('.dropdown-menu').css(
-          {
-            right: 0
-          });
-        })
-        $('[data-toggle=tab]').click(function(e)
-        {
-          e.preventDefault();
-        })
-      });
     </script>
     <script id="script_remove">
       SetViewPort();
