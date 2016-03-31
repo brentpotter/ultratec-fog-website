@@ -304,11 +304,6 @@ dd{
       height: 150px;
     }
   }
-  .caption{
-    display: block;
-    height: 40px;
-    overflow: hidden;
-  }
 }
 
 #youtube-channel{
@@ -322,9 +317,6 @@ dd{
   padding-top: 40px;
   background: white;
   .thumbnail{
-    @media (min-width: $screen-md-min){
-      height: 490px;
-    }
     h2{
       font-size: 18px;
     }
