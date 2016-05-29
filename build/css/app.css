@@ -7846,33 +7846,48 @@ dd {
   margin-top: -50px; }
 
 .product-category {
-  background: orange;
-  padding: 50px 0;
+  height: 140px;
+  display: table;
   text-align: center;
-  text-transform: uppercase;
   color: white;
-  font-weight: 700;
-  font-size: 160%;
+  font-weight: 500;
+  font-size: 150%;
   width: 50%;
-  float: left; }
+  float: left;
+  text-shadow: 0px 1px 10px #474747; }
+  .product-category:hover {
+    color: white; }
+  .product-category span {
+    display: table-cell;
+    vertical-align: middle; }
   @media (min-width: 992px) {
     .product-category {
-      padding: 100px 0;
-      width: 20%; } }
+      height: 220px;
+      vertical-align: middle;
+      width: 14.257%;
+      font-size: 140%; } }
   .product-category:nth-child(1) {
     background: url("../img/category-fog-haze.jpg");
     background-size: cover; }
   .product-category:nth-child(2) {
+    background: url("../img/category-low-lying.jpg");
+    background-size: cover;
+    background-position: bottom; }
+  .product-category:nth-child(3) {
+    background: url("../img/category-haze.jpg");
+    background-size: cover;
+    background-position: middle; }
+  .product-category:nth-child(4) {
     background: url("../img/category-effects.jpg");
     background-size: cover; }
-  .product-category:nth-child(3) {
+  .product-category:nth-child(5) {
     background: url("../img/category-confetti.jpg");
     background-size: cover; }
-  .product-category:nth-child(4) {
+  .product-category:nth-child(6) {
     background: url("../img/category-fluid.jpg");
     background-size: cover;
     background-position: bottom; }
-  .product-category:nth-child(5) {
+  .product-category:nth-child(7) {
     background: url("../img/category-fire.jpg");
     background-size: cover; }
 
@@ -8065,6 +8080,25 @@ dd {
   padding-top: 40px;
   padding-bottom: 40px;
   background: white; }
+
+.category-all-products-table {
+  background: white;
+  table-layout: fixed; }
+  @media (min-width: 992px) {
+    .category-all-products-table {
+      width: 49%;
+      float: left; }
+      .category-all-products-table:nth-child(odd) {
+        margin-right: 2%; } }
+  .category-all-products-table .category-all-products-table--image {
+    overflow: hidden;
+    width: 30%; }
+    .category-all-products-table .category-all-products-table--image img {
+      max-height: 125px; }
+  .category-all-products-table .category-all-products-table--name {
+    width: 70%;
+    padding-left: 20px;
+    font-size: 130%; }
 
 footer {
   padding: 30px 0;
