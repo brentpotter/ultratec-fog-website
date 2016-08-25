@@ -8032,6 +8032,9 @@ dd {
 .badge-r-and-d {
   background: #2186C4; }
 
+.staff-member .well {
+  min-height: 222px; }
+
 .staff-member h2 {
   margin-top: 0; }
 
